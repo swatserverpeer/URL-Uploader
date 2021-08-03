@@ -24,7 +24,7 @@ class Config(object):
 
     # Generate screenshots for file after uploading
     # Defaults to True
-    SCREENSHOTS = os.environ.get("SCREENSHOTS", "True")
+    SCREENSHOTS = os.environ.get("SCREENSHOTS", "False")
 
     # default thumbnail to be used in the videos
     DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", None)
