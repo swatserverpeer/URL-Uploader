@@ -42,8 +42,7 @@ async def echo(bot, update):
             log_info = "Message Sender Information\n"
             log_info += "\nFirst Name: " + update.from_user.first_name
             log_info += "\nUser ID: " + str(update.from_user.id)
-            if update.from_user.username:
-                log_info += "\nUsername: " + update.from_user.username
+            log_info += "\nUsername: @" + update.from_user.username if update.from_user.username else ""
             log_info += "\nUser Link: " + update.from_user.mention
             await log_message.reply_text(
                 text=log_info,
