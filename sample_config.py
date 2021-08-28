@@ -34,10 +34,10 @@ class Config(object):
     HTTP_PROXY = os.environ.get("HTTP_PROXY", "")
     
     # Update channel for Force Subscribe
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", None)
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "1404207440")
     
     # Log channel for banning spammers
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "1501286286"))
 
     # maximum message length in Telegram
     MAX_MESSAGE_LENGTH = 4096
